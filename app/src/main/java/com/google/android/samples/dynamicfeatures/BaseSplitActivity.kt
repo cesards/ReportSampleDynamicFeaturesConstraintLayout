@@ -17,7 +17,7 @@
 package com.google.android.samples.dynamicfeatures
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
+import android.support.v7.app.AppCompatActivity
 import com.google.android.play.core.splitcompat.SplitCompat
 
 /**

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_pharmacy_title">Chewy Pharmacy</string>
+    <string name="pharmacy_title">Why Chewy Pharmacy</string>
+    <string name="pharmacy_item_low_prices">Low Prices</string>
+    <string name="pharmacy_item_easy_refills">Easy Refills</string>
+    <string name="pharmacy_item_licensed_pharmacists">Licensed\nPharmacists</string>
+    <string name="pharmacy_save_with_autoship">Save with Autoship</string>
+    <string name="pharmacy_item_simple_setup">Simple Setup</string>
+    <string name="pharmacy_item_customer_service">24/7 Customer\nService</string>
+    <string name="pharmacy_directions_title">How to Order Prescription Items</string>
+    <string name="pharmacy_directions_one">1</string>
+    <string name="pharmacy_directions_two">2</string>
+    <string name="pharmacy_directions_three">3</string>
+    <string name="pharmacy_directions_four">4</string>
+    <string name="pharmacy_directions_one_text">Search Chewy Pharmacy for your pet’s medicine and add to cart.</string>
+    <string name="pharmacy_directions_two_text">At checkout, enter your pet and vet information.</string>
+    <string name="pharmacy_directions_three_text">Select an approval method: we can contact your vet, or you can mail us the prescription directly.</string>
+    <string name="pharmacy_directions_four_text">Place your order.</string>
+    <string name="pharmacy_contact_title">Contact Our Trusted Pharmacists</string>
+    <string name="pharmacy_phone">877–977–3879</string>
+    <string name="pharmacy_email">RX@CHEWY.COM</string>
+    <string name="pharmacy_faq_button">FREQUENTLY ASKED QUESTIONS</string>
+    <string name="pharmacy_shop_now_button">SHOP NOW</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_action_remove">REMOVE</string>
+    <string name="notifications_orders_header_title">Orders</string>
+    <string name="notifications_orders_header_description">Shipping updates, Autoship reminders &amp; more</string>
+    <string name="notifications_orders_content_title">Order Notifications</string>
+    <string name="notifications_remove_notification_dialog_title">Remove Notifications?</string>
+    <string name="notifications_remove_notification_orders_dialog_message">You will not be notified for future orders updates.</string>
+</resources>

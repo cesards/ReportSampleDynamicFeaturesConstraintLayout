@@ -1,36 +1,509 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright 2018 Google LLC.
-  ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
-  ~ you may not use this file except in compliance with the License.
-  ~ You may obtain a copy of the License at
-  ~
-  ~    http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  -->
-
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KotlinSampleActivity">
+    android:orientation="vertical"
+    tools:context="com.google.android.samples.dynamicfeatures.ondemand.KotlinSampleActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/shopButtonContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/heroImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pharmacy_hero"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Why Chewy Pharmacy"
+                android:textColor="#4A4A4A"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/heroImage"
+                />
+
+            <TextView
+                android:id="@+id/lowPrices"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Low Prices"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/asset_low_prices"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintEnd_toStartOf="@+id/easyRefills"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleText"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/easyRefills"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/pharmacy_item_easy_refills"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/asset_easy_refills"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/lowPrices"
+                app:layout_constraintTop_toBottomOf="@+id/titleText"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6sp"
+                android:textStyle="normal"
+                />
+
+            <android.support.constraint.Barrier
+                android:id="@+id/barrierRowOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="easyRefills,lowPrices"
+                />
+
+            <TextView
+                android:id="@+id/pharmacists"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/pharmacy_item_licensed_pharmacists"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/asset_licensed_pharm"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintEnd_toStartOf="@+id/autoship"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrierRowOne"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/autoship"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/pharmacy_save_with_autoship"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/asset_save_autoship"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/pharmacists"
+                app:layout_constraintTop_toBottomOf="@+id/barrierRowOne"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6sp"
+                android:textStyle="normal"
+                />
+
+            <android.support.constraint.Barrier
+                android:id="@+id/barrierRowTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="autoship,pharmacists"
+                />
+
+            <TextView
+                android:id="@+id/simple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/pharmacy_item_simple_setup"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/asset_simple_setup"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintEnd_toStartOf="@+id/customerService"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrierRowTwo"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/customerService"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/pharmacy_item_customer_service"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/asset_customer_service"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/simple"
+                app:layout_constraintTop_toBottomOf="@+id/barrierRowTwo"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6sp"
+                android:textStyle="normal"
+                />
+
+            <android.support.constraint.Barrier
+                android:id="@+id/barrierRowThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="simple,customerService"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/background_grey"
+                app:layout_constraintBottom_toTopOf="@id/contactTitleText"
+                app:layout_constraintTop_toTopOf="@+id/directionsTitle"/>
+
+            <TextView
+                android:id="@+id/directionsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/pharmacy_directions_title"
+                android:gravity="top|center_horizontal"
+                android:paddingBottom="24dp"
+                android:paddingTop="24dp"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintTop_toBottomOf="@id/barrierRowThree"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/directionsLineOneIcon"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="16dp"
+                android:text="@string/pharmacy_directions_one"
+                android:background="@drawable/shape_circle"
+                android:backgroundTint="@color/blue_navy"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/directionsLineOne"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/directionsLineOne"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/directionsLineOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/pharmacy_directions_one_text"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/directionsLineOneIcon"
+                app:layout_constraintTop_toBottomOf="@id/directionsTitle"
+                style="@style/Text.Paragraph"
+                />
+
+            <TextView
+                android:id="@+id/directionsLineTwoIcon"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="16dp"
+                android:text="@string/pharmacy_directions_two"
+                android:background="@drawable/shape_circle"
+                android:backgroundTint="@color/blue_navy"
+                android:gravity="center"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="@+id/directionsLineTwo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/directionsLineTwo"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/directionsLineTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/pharmacy_directions_two_text"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/directionsLineTwoIcon"
+                app:layout_constraintTop_toBottomOf="@id/directionsLineOne"
+                style="@style/Text.Paragraph"
+                />
+
+            <TextView
+                android:id="@+id/directionsLineThreeIcon"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="16dp"
+                android:text="@string/pharmacy_directions_three"
+                android:background="@drawable/shape_circle"
+                android:backgroundTint="@color/blue_navy"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/directionsLineThree"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/directionsLineThree"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/directionsLineThree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/pharmacy_directions_three_text"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/directionsLineThreeIcon"
+                app:layout_constraintTop_toBottomOf="@id/directionsLineTwo"
+                style="@style/Text.Paragraph"/>
+
+            <TextView
+                android:id="@+id/directionsLineFourIcon"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="16dp"
+                android:text="@string/pharmacy_directions_four"
+                android:background="@drawable/shape_circle"
+                android:backgroundTint="@color/blue_navy"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/directionsLineFour"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/directionsLineFour"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/directionsLineFour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/pharmacy_directions_four_text"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/directionsLineFourIcon"
+                app:layout_constraintTop_toBottomOf="@id/directionsLineThree"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6sp"
+                android:textStyle="normal"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_gradient_pharmacy"
+                app:layout_constraintBottom_toBottomOf="@+id/faqSpacer"
+                app:layout_constraintTop_toTopOf="@id/contactTitleText"
+                />
+
+            <TextView
+                android:id="@+id/contactTitleText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="@string/pharmacy_contact_title"
+                android:gravity="top|center_horizontal"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/directionsLineFour"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/contactHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactTitleText"
+                tools:text="Chewy Pharmacy KY, LLC"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/contactSubHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactHeader"
+                tools:text="2815 Watterson Trail\nLouisville, KY 40299"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6sp"
+                android:textStyle="normal"
+                />
+
+            <Button
+                android:id="@+id/callChewyRx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/pharmacy_phone"
+                android:lines="1"
+                app:layout_constraintEnd_toStartOf="@+id/emailChewyRx"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactSubHeader"
+                android:backgroundTint="@color/white"
+                style="@style/Button.White"
+                />
+
+            <Button
+                android:id="@+id/emailChewyRx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/pharmacy_email"
+                android:lines="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/callChewyRx"
+                app:layout_constraintTop_toBottomOf="@id/contactSubHeader"
+                style="@style/Button.White"/>
+
+            <android.support.constraint.Barrier
+                android:id="@+id/barrierContactButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="callChewyRx,emailChewyRx"/>
+
+            <Button
+                android:id="@+id/faqButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/pharmacy_faq_button"
+                android:lines="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/barrierContactButtons"
+                style="@style/Button.White"
+                />
+
+            <Space
+                android:id="@+id/faqSpacer"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/faqButton"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/shopButtonContainer"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="8dp"
-        android:text="@string/content_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="#fff"
+        android:elevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/shopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/pharmacy_shop_now_button"
+            android:lines="1"
+            style="@style/Button.Primary"/>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

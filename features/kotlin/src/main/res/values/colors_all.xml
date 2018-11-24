@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- All colors used in the app should be defined here -->
+
+    <color name="chewy_blue">#128ced</color>
+    <color name="chewy_blue_dark">#0A548E</color>
+    <color name="chewy_blue_light">#88C5F5</color>
+    <color name="blue_navy">#163977</color>
+    <color name="orange">#FF5700</color>
+    <color name="green">#52AE50</color>
+    <color name="alert_red">#D0021B</color>
+    <color name="canary">#F6A623</color>
+    <color name="black">#000000</color>
+    <color name="dark_gray">#4A4A4A</color>
+    <color name="medium_gray">#9B9B9B</color>
+    <color name="light_gray">#D8D8D8</color>
+    <color name="background_grey">#F2F4F5</color>
+    <color name="background_separator">#E1E1E1</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- transparencies: The number in front of the name indicates the alpha(transparency) percentage -->
+    <color name="transparent">#00000000</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="black_40">#66000000</color>
+    <color name="chewy_blue_40">#66128ced</color>
+
+    <!-- not in styles -->
+    <color name="yellow">#F8E71C</color>
+    <color name="purple">#8B70B2</color>
+
+</resources>

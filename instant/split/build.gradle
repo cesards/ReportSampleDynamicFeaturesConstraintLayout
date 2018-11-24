@@ -17,13 +17,10 @@
 apply plugin: 'com.android.dynamic-feature'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply from: "${rootDir}/gradle/android-base.gradle"
 
 android {
-
-    compileSdkVersion 28
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="track_package_title">Track Package</string>
+    <string name="track_package_label_out_for_delivery">Out For\n Delivery</string>
+    <string name="track_package_label_action_required">Action\n Required</string>
+    <string name="track_package_label_arrives">Arrives</string>
+    <string name="track_package_carrier">Carrier</string>
+    <string name="track_package_tracking_number">Tracking Number</string>
+    <string name="track_package_shipped_to">Shipped to</string>
+    <string name="track_package_history_header">Tracking History</string>
+    <string name="track_package_history_header_error">Error</string>
+    <string name="track_package_see_more">See More</string>
+    <string name="track_package_no_history">Your package has just shipped! Check back soon for tracking information.</string>
+    <string name="track_package_error">Oops! The tracking history didn\'t load. Please</string>
+    <string name="track_package_error_visit_fedex">visit FedEx</string>
+    <string name="track_package_error_call_us">or call us at</string>
+    <string name="track_package_error_chewy_number">1–800–672–4399</string>
+    <string name="track_package_see_less">See Less</string>
+</resources>

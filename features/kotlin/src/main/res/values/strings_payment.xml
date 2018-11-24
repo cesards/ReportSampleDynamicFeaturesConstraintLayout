@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="try_again">Retry This Card</string>
+    <string name="account_add_payment_method">Add Payment Method</string>
+    <string name="payment_revision_edit_decline_title">Update Current Card</string>
+    <string name="account_edit_payment_method">Edit Payment Method</string>
+    <string name="payment_revision_order_canceled">Your order has been canceled.</string>
+    <string name="payment_revision_order_locked_message">You cannot change this order because it is locked by a Customer Service representative.</string>
+    <string name="payment_revision_payment_updated_title">Payment Updated</string>
+    <string name="payment_revision_payment_updated_message">Success! We\'ll start preparing your order.</string>
+    <string name="payment_declined">Payment Declined</string>
+    <string name="card_declined_payment_revision_message">Try using a different card or call our team for assistance</string>
+    <string name="use_a_different_card">Use a different card</string>
+</resources>

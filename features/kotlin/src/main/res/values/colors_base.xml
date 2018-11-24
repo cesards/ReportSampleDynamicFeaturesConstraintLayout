@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- All colors should be consumed from colors_all.xml -->
+
+    <!-- System Colors-->
+    <color name="colorPrimary">@color/chewy_blue</color>
+    <color name="colorPrimaryDark">@color/chewy_blue_dark</color>
+    <color name="colorAccent">@color/chewy_blue</color>
+
+    <color name="swipeRefreshColor">@color/chewy_blue</color>
+    <color name="badge_quantity">@color/canary</color>
+    <color name="image_placeholder">@color/white</color>
+    <color name="dividerColor">@color/background_grey</color>
+
+</resources>

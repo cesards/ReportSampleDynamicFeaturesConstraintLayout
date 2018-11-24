@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pet_details_pharmacy_header">All fields are required. Please complete your pet\'s information so we can verify the prescription.</string>
+    <string name="account_add_a_pet">Add a Pet</string>
+    <string name="account_pet_profiles_empty_state_primary">Welcome to Pet Profiles</string>
+    <string name="account_pet_profiles_empty_state_secondary">Add your pet’s info and get personalized recommendations just for them!</string>
+    <string name="account_pet_profiles_add_a_pet">ADD A PET</string>
+    <string name="account_add_pet_type_spinner_hint">Type</string>
+    <string name="account_add_pet_gender_spinner_hint">Gender</string>
+    <string name="account_add_pet_age_month_hint">Age (Months)</string>
+    <string name="account_add_pet_age_year_hint">Age (Years)</string>
+    <string name="account_add_pet_name_hint">Name</string>
+    <string name="account_add_pet_add_photo_button">ADD</string>
+    <string name="account_add_pet_adoption_date">Adoption Date</string>
+    <string name="account_add_pet_adoption_date_hint">Adoption Date</string>
+    <string name="account_add_pet_birthday_hint">Birthday</string>
+    <string name="account_add_pet_birthday_underneath_hint">Not sure? Use an approximate day to continue.</string>
+    <string name="account_add_pet_breed_hint">Breed</string>
+    <string name="account_add_pet_breed_unknown">Unknown Mix</string>
+    <string name="account_add_pet_size_spinner_hint">Size</string>
+    <string name="account_add_pet_weight_hint">Weight (lb)</string>
+    <string name="pet_profile_choose_gender">Choose Gender</string>
+    <string name="pet_profile_choose_size">Choose Size</string>
+    <string name="account_add_pet_pre_conditions_hint">Pre-Existing Conditions</string>
+    <string name="account_add_pet_current_medications_hint">Current Medications</string>
+    <string name="account_add_pet_medications_allergies_hint">Medication Allergies</string>
+    <string name="account_add_pet_none">None</string>
+    <string name="pet_profile_delete">Delete</string>
+    <string name="account_add_pet_pharmacies_med_allergies_search_bar_title">Search Medication Allergies</string>
+    <string name="account_add_pet_pharmacies_current_med_search_bar_title">Search Current Medications</string>
+    <string name="account_add_pet_pharmacies_conditions_search_bar_title">Search Pre-Existing Conditions</string>
+    <string name="account_search_breed_search_bar_hint">Search Breeds</string>
+    <string name="account_search_breed_search_bar_hint_species">Search Species</string>
+    <string name="account_search_breed_dog_unknown">UNKNOWN MIX</string>
+    <string name="account_search_breed_other_unknown">OTHER</string>
+    <string name="account_search_no_results_found">No Results Found</string>
+    <string name="account_search_check_spelling">Please check your spelling or tap</string>
+
+    <string name="pet_profile_size_unknown">Unknown</string>
+    <string name="pet_profile_size_xs">Extra Small (2–12lbs)</string>
+    <string name="pet_profile_size_sm">Small (13–25lbs)</string>
+    <string name="pet_profile_size_m">Medium (26–50lbs)</string>
+    <string name="pet_profile_size_l">Large (51–75lbs)</string>
+    <string name="pet_profile_size_xl">Extra Large (76–100lbs)</string>
+    <string name="pet_profile_size_g">Giant (100–150+lbs)</string>
+    <string name="pet_profile_size_undefined">Undefined</string>
+
+    <string name="pet_profile_type_dog">Dog</string>
+    <string name="pet_profile_type_cat">Cat</string>
+    <string name="pet_profile_type_fish">Fish</string>
+    <string name="pet_profile_type_bird">Bird</string>
+    <string name="pet_profile_type_small_pet">Small pet</string>
+    <string name="pet_profile_type_reptile">Reptile</string>
+    <string name="pet_profile_type_horse">Horse</string>
+    <string name="pet_profile_type_livestock">Livestock</string>
+    <string name="pet_profile_type_unknown">Unknown</string>
+
+    <string name="pet_profile_gender_unknown">Unknown</string>
+    <string name="pet_profile_gender_male">Male</string>
+    <string name="pet_profile_gender_female">Female</string>
+    <string name="pet_profile_gender_undefined">Undefined</string>
+
+    <string name="pet_profile_delete_dialog_title">Delete %s?</string>
+    <string name="pet_profile_delete_dialog_body">This pet profile will be permanently deleted.</string>
+
+    <string name="pet_profile_clear_px_fields_dialog_title">Are you sure?</string>
+    <string name="pet_profile_clear_allergies">All selected Medication Allergies will be deleted from your pet.</string>
+    <string name="pet_profile_clear_existing_conditions">All selected Pre-Existing Conditions will be deleted from your pet.</string>
+    <string name="pet_profile_clear_medications">All selected Current Medications will be deleted from your pet.</string>
+    <string name="pet_profile_edit_image">Change Photo</string>
+    <string name="pet_profile_remove_image">Remove Photo</string>
+    <string name="error_too_many_pets">Max number of Pet Profiles reached</string>
+    <string name="error_action_manage">Manage</string>
+</resources>

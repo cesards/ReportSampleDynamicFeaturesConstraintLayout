@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--defaults-->
+    <dimen name="padding_start">16dp</dimen>
+    <dimen name="padding_end">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="touch_target_min">48dp</dimen>
+    <dimen name="elevation_section">2dp</dimen>
+    <dimen name="default_corner_radius">4dp</dimen>
+    <dimen name="fab_margin">32dp</dimen>
+
+    <!--Cards-->
+    <dimen name="default_list_card_corner_radius">4dp</dimen>
+    <dimen name="default_list_card_margin_horizontal">8dp</dimen>
+    <dimen name="default_list_card_margin_vertical">4dp</dimen>
+    <dimen name="default_list_tile_elevation">2dp</dimen>
+
+    <!--Default Image Sizes-->
+    <dimen name="thumbnail_large">120dp</dimen>
+    <dimen name="thumbnail_small">70dp</dimen>
+    <dimen name="empty_state_image">96dp</dimen>
+
+    <!-- Buttons -->
+    <dimen name="button_corner_radius">@dimen/default_corner_radius</dimen>
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="action_button_height">48dp</dimen>
+    <dimen name="action_button_margin_top">24dp</dimen>
+    <dimen name="button_inset">6dp</dimen>
+    <dimen name="button_stroke">1dp</dimen>
+    <!-- button_ripple_inset =  button_inset + button_stroke_stroke -->
+    <dimen name="button_ripple_inset">7dp</dimen>
+
+    <!-- Font Sizes -->
+    <dimen name="shop_category_offer_price">18sp</dimen>
+    <dimen name="shop_category_list_price">15sp</dimen>
+
+    <!-- Forms -->
+    <dimen name="field_margin_vertical">8dp</dimen>
+
+    <!-- SummaryItem -->
+    <dimen name="summary_item_icon_size">20dp</dimen>
+    <dimen name="summary_item_padding">4dp</dimen>
+
+    <!--Recommendation Item-->
+    <dimen name="recommendation_item_width">144dp</dimen>
+
+    <!--Grid Divider Height-->
+    <dimen name="divider_height">1dp</dimen>
+
+    <!-- Order Diff Errors -->
+    <dimen name="order_diff_bullet_radius">2sp</dimen>
+    <dimen name="order_diff_bullet_margin">8sp</dimen>
+
+    <!-- Image Picker -->
+    <dimen name="grid_expected_size">40dp</dimen>
+
+    <!--Home Page-->
+    <dimen name="home_carousel_height">100dp</dimen>
+    <dimen name="default_home_list_item_divider_margin">32dp</dimen>
+
+</resources>

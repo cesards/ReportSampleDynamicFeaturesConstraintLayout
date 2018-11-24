@@ -16,14 +16,10 @@
 
 apply plugin: 'com.android.dynamic-feature'
 apply plugin: 'kotlin-android'
+apply from: "${rootDir}/gradle/android-base.gradle"
 
 android {
-
-    compileSdkVersion versions.compileSdk
     defaultConfig {
-        minSdkVersion versions.minSdk
-        targetSdkVersion versions.targetSdk
-
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++11"
@@ -39,6 +35,5 @@ android {
 }
 
 dependencies {
-
     implementation project(':app')
 }

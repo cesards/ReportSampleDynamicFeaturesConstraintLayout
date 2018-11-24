@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="barcode_viewport_width">304dp</dimen>
+    <dimen name="barcode_viewport_height">196dp</dimen>
+
+</resources>
