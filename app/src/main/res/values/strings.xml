@@ -28,5 +28,6 @@
     <string name="request_uninstall">Request module uninstall</string>
     <string name="instant_dynamic_feature_split_install">request instant split install</string>
     <string name="instant_dynamic_feature_url_load">request install split install via url</string>
+    <string name="title_activity_sample">SampleActivity</string>
 
 </resources>
