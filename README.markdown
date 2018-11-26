@@ -5,6 +5,9 @@ that depend on resources in the base/app module, for some weird reason the Const
 don't seem to work. It might be an issue related to view inflation but I'm not sure what's going on
 because this is really weird.
 
+It might be an issue related to ConstraintLayout and not Dynamic Features because the rest of
+layouts in the company's app work perfectly.
+
 --------------------------------------------------------------
 --------------------------------------------------------------
 --------------------------------------------------------------
