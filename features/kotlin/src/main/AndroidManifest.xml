@@ -26,7 +26,7 @@
     </dist:module>
 
     <application>
-        <activity android:name="com.google.android.samples.dynamicfeatures.ondemand.KotlinSampleActivity">
+        <activity android:name="com.google.android.samples.dynamicfeatures.ondemand.DynamicSampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>

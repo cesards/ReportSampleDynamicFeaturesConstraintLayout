@@ -14,10 +14,6 @@
  * limitations under the License.
  */
 
-include ':app',
-        ':features:java',
-        ':features:kotlin',
-        ':features:assets',
-        ':features:native',
-        ':instant:split',
-        ':instant:url'
+include ':app'
+include ':features:kotlin'
+
