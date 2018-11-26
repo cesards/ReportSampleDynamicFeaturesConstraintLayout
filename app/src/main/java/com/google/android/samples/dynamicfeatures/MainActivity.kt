@@ -33,10 +33,8 @@ import com.google.android.play.core.splitinstall.SplitInstallSessionState
 import com.google.android.play.core.splitinstall.SplitInstallStateUpdatedListener
 import com.google.android.play.core.splitinstall.model.SplitInstallSessionStatus
 
-
 private const val packageName = "com.google.android.samples.dynamicfeatures.ondemand"
 private const val kotlinSampleClassname = "$packageName.DynamicSampleActivity"
-
 
 /** Activity that displays buttons and handles loading of feature modules. */
 class MainActivity : AppCompatActivity() {
@@ -130,14 +128,6 @@ class MainActivity : AppCompatActivity() {
 
         updateProgressMessage("Starting install for $name")
     }
-
-    private fun openUrl(url: String) {
-        var intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-        intent.setPackage(packageName)
-        intent.addCategory(Intent.CATEGORY_BROWSABLE)
-        startActivity(intent)
-    }
-
 
     /**
      * Define what to do once a feature module is loaded successfully.

@@ -1,3 +1,15 @@
+# ConstraintLayout Barriers + Dynamic Features issue.
+
+The sample is pretty easy to follow. If we use views + layouts declared in a Dynamic Feature Module
+that depend on resources in the base/app module, for some weird reason the ConstraintLayout Barriers
+don't seem to work. It might be an issue related to view inflation but I'm not sure what's going on
+because this is really weird.
+
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+
 # PlayCore API sample
 
 This sample demonstrates usage of the PlayCore API.
